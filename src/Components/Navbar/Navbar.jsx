@@ -39,7 +39,7 @@ export default function Navbar() {
     setToken(null);
     setName(null);
 
-    navigate("/e-commerce-login");
+    navigate("/FreshCart/login");
 
   }
 
@@ -184,7 +184,7 @@ export default function Navbar() {
                     <NavLink
                       className="nav-link"
                       aria-current="page"
-                      to="/e-commerce-login"
+                      to="/FreshCart/login"
                     >
                       Login
                     </NavLink>
@@ -193,7 +193,7 @@ export default function Navbar() {
                     <NavLink
                       className="nav-link"
                       aria-current="page"
-                      to="/register"
+                      to="FreshCart/register"
                     >
                       Register
                     </NavLink>

@@ -31,8 +31,8 @@ const router = createBrowserRouter([
   {
     path: '', element: <Layout />, children: [
       { path: '/', element: <Login /> },
-      { path: 'e-commerce-login', element: <Login /> },
-      { path: 'register', element: <Register /> },
+      { path: 'FreshCart/login', element: <Login /> },
+      { path: 'FreshCart/register', element: <Register /> },
       {
         path: 'productdetails/:id', element: <ProtectedRoute>
           <ProductDetails />

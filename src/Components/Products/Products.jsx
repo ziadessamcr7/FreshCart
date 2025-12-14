@@ -32,28 +32,8 @@ export default function Products() {
 
     // const { isLoading, isFetching, data } = useQuery('allProducts', getAllProducts)
 
-    useEffect(() => {
-
-        // setProductsArray(data?.data?.data)
-        // setProductsArray2(data?.data?.data)
-        // // setProductsArray2(data?.data.data)
-        // console.log(data?.data?.data)
-        getAllProducts(1)
-    }, [])
 
 
-
-    // if (isLoading) {
-    //     return <p className='vh-100 d-flex justify-content-center' id='loading-icon'> <ColorRing
-    //         visible={true}
-    //         height="80"
-    //         width="80"
-    //         ariaLabel="blocks-loading"
-    //         wrapperStyle={{}}
-    //         wrapperClass="blocks-wrapper"
-    //         colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
-    //     /> </p>
-    // }
 
 
 
@@ -158,6 +138,29 @@ export default function Products() {
         getUserCart()
     }, [])
 
+
+
+        useEffect(() => {
+
+        // setProductsArray(data?.data?.data)
+        // setProductsArray2(data?.data?.data)
+        // // setProductsArray2(data?.data.data)
+        // console.log(data?.data?.data)
+        getAllProducts(1)
+    }, [])
+
+
+        if (productList?.length === 0) {
+        return <p className='vh-100 d-flex justify-content-center' id='loading-icon'> <ColorRing
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="blocks-loading"
+            wrapperStyle={{}}
+            wrapperClass="blocks-wrapper"
+            colors={['#e15b64', '#f47e60', '#f8b26a', '#abbd81', '#849b87']}
+        /> </p>
+    }
 
 
 
